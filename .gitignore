@@ -1,0 +1,39 @@
+﻿# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Android
+*.iml
+.gradle
+local.properties
+.idea/
+*.hprof
+captures/
+output.json
+
+# iOS
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+**/*.mode1v3
+**/*.mode2v3
+**/*.xcuserstate
+
+# Windows
+flutter_windows.dll.exp
+flutter_windows.dll.lib
+
+# Backup files
+*.backup
+*.backup_*
+
+# VS Code
+.vscode/
+
+# Generated files
+*.g.dart

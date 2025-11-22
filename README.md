@@ -2,6 +2,47 @@
 
 88鍵盤ピアノアプリに寿司打風のコースシステムを搭載！
 
+##  インストール方法
+
+### 方法1: APKを直接インストール（超カンタン！）
+1. **[Releases](https://github.com/furukawa1020/sushipiano/releases)** ページへGO！
+2. 最新の `app-release.apk` をダウンロード
+3. Androidデバイスで開く
+4. **インストール完了！** 
+
+>  初回は「提供元不明のアプリ」許可が必要な場合あり
+
+### 方法2: 自分でビルド（開発者向け）
+FlutterとAndroid Studio入ってる人はこっち！
+
+```bash
+# 1. リポジトリをクローン
+git clone https://github.com/furukawa1020/sushipiano.git
+cd sushipiano
+
+# 2. 依存関係インストール
+flutter pub get
+
+# 3. APKビルド（リリース版）
+flutter build apk --release
+
+# 4. APKは build/app/outputs/flutter-apk/app-release.apk に生成される！
+```
+
+**インストール:**
+```bash
+# デバイスをUSB接続して
+adb install build/app/outputs/flutter-apk/app-release.apk
+```
+
+**必要な環境:**
+- Flutter SDK (latest stable)
+- Android Studio + Android SDK
+- NDK 26.3.11579264以上
+- CMake 3.10.2以上（C++ビルド用）
+
+---
+
 ##  主な機能
 
 ###  寿司打コースシステム
@@ -15,15 +56,15 @@
 - 寿司エフェクト付き！
 
 ###  C++ネイティブオーディオ
-- 超低レイテンシ音声生成
+- 低レイテンシ音声生成
 - Taylor展開による高速sin計算
 - ADSRエンベロープ処理
-- 5倍音合成でリッチな音色
+- 5倍音合成でリッチな音色(これは微妙普通にチープ)
 
 ##  動作環境
 - Android 8.0以上
 - APKサイズ: 23.2MB
-- デジタルサイネージ対応
+- デジタルサイネージLD290EJ5-FPN1ていうよく分からんやつです。気になる人は調べてみてください〜！
 
 ##  技術スタック
 - Flutter SDK
@@ -33,9 +74,13 @@
 - Method Channel (Flutter-Native通信)
 
 ##  ビルド方法
-\\\ash
+```bash
 flutter build apk --release
-\\\
+```
 
 ##  ライセンス
 MIT License
+
+---
+
+** これがほんとの寿司打！**

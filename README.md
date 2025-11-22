@@ -73,7 +73,7 @@ adb install build/app/outputs/flutter-apk/app-release.apk
 - Android 8.0
 - APKサイズ: 23.2MB
 - デジタルサイネージLD290EJ5-FPN1ていうやつ用のプロジェクト。気になる人は調べてみてください〜！
-- Bluetoothスピーカー(
+- Bluetoothスピーカー(必須です！)
 
 ##  技術スタック
 - Flutter SDK
